@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Simple Webpage</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
+    body{
+        background: url(./beach.jpeg);
+        background-size: cover;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+    }
+    .container1{
+        width: 100%;
+        height: 60px;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    nav{
+        margin: 0 30px;
+    }
+    ul{
+        list-style: none;
+        margin: 20px;
+        font-size: 20px;
+    }
+    li{
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .inp{
+        position: absolute;
+        right: 5px;
+    }
+    .input{
+        height: 45px;
+        border-radius: 5px;
+        font-size: 17px;
+    }
+    .text{
+        padding-left: 20px;
+        margin-right: 5px;
+        outline: 1px solid blue;
+    }
+    .submit{
+        width: 100px;
+        margin-right: 50px;
+        background: black;
+        color: green;
+        border: 1px solid green; 
+    }
+    .container2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .log-button{
+        text-decoration: none;
+        padding: 10px;
+        font-size: 35px;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .login{
+        color: white;
+        background: rgba(0, 128, 0, 0.85);
+    }
+    .register{
+        color: black;
+        background: rgba(0, 183, 255, 0.85);
+    }
+</style>
+<body>
+    <div class="container1 flex">
+        <nav class="flex">
+            <h1>OysScan</h1>
+            <ul class="flex">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact us</li>
+            </ul>
+            <div class="inp">
+                <input type="text" placeholder="search" class="input-text">
+                <input type="submit" value="search" class="input-submit">
+            </div>
+        </nav>
+    </div>
+    <div class="container2">
+        <a href="#" class="log-button login">LOGIN</a>
+        <a href="#" class="log-button register">REGISTER</a>
+    </div>
+</body>
+</html>
